@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(black-image.jpeg);
+}
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.sky {
+    background-image: url('fb-game-background.png');
+    width: 500px;
+    height: 580px;
+    position: relative;
+}
+
+.ground {
+    background-image: url('bottom-background.png');
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+}
+
+.bird {
+    background-image: url('flappy-bird.png');
+    position: absolute;
+    width: 60px;
+    height: 45px;
+}
+
+.obstacle {
+    background-image: url('flappybird-pipe.png');
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.top-obstacle{
+    background-image: url('flappybird-pipe.png');
+    width: 60px;
+    height: 300px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.score {
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    color: white;
+    text-shadow: 4px 4px 2px black;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    z-index: +1;
+}
